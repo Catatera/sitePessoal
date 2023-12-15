@@ -1,0 +1,25 @@
+{
+  "name": "sitePessoal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Catatera/sitePessoal.git",
+  "author": "catatera <gabriel.leonel2016@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d build && webpack"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
