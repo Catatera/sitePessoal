@@ -3,10 +3,8 @@ import {Container, Nav, Title} from "./styles"
 
 export default function Header() { 
     return (
-      <Container>
-        <Title>
-          Gabriel Leonel
-        </Title>
+      <Container >
+        <Title>Gabriel Leonel</Title>
         <Nav>
           <ul>
             <li>Home</li>
