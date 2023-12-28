@@ -1,16 +1,14 @@
 import React from "react";
 import Tecnologies from "./Tecnologies";
 import { ProfileContainer, DivRight, DivLeft, AboutMe } from "./styles";
+import imgPerfil from "./images/feia.jpeg";
 
 export default function Main() {
   return (
     <main>
       <ProfileContainer>
         <DivLeft>
-          <img
-            src="https://www.designi.com.br/images/preview/10495238.jpg"
-            width="200px"
-          />
+          <img src={imgPerfil} width="100px" />
         </DivLeft>
         <DivRight>
           <p>Gabriel Leonel,</p>
