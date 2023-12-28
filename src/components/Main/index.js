@@ -1,7 +1,8 @@
 import React from "react";
 import Tecnologies from "./Tecnologies";
-import { ProfileContainer, DivRight, DivLeft, AboutMe } from "./styles";
-import imgPerfil from "./images/feia.jpeg";
+import ProjectCardItem from "./ProjectCardItem";
+import { ProfileContainer, DivRight, DivLeft, AboutMe, Projects } from "./styles";
+import imgPerfil from "./images/bonito.jpeg";
 
 export default function Main() {
   return (
@@ -30,6 +31,13 @@ export default function Main() {
           including versions of Lorem Ipsum.
         </p>
       </AboutMe>
+      <Projects>
+        <ProjectCardItem />
+        <ProjectCardItem />
+        <ProjectCardItem />
+        <ProjectCardItem />
+        <ProjectCardItem />
+        </Projects>
     </main>
   );
 }
