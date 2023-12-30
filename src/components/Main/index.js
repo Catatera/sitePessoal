@@ -9,7 +9,7 @@ export default function Main() {
     <main>
       <ProfileContainer>
         <DivLeft>
-          <img src={imgPerfil} width="100px" />
+          <img src={imgPerfil} />
         </DivLeft>
         <DivRight>
           <p>Gabriel Leonel,</p>
@@ -37,7 +37,8 @@ export default function Main() {
         <ProjectCardItem />
         <ProjectCardItem />
         <ProjectCardItem />
-        </Projects>
+        <ProjectCardItem />
+      </Projects>
     </main>
   );
 }
