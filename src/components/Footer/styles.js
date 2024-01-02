@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  margin: 0px 10%;
+  background-color: gray;
+  height:5vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  align-content:center;
   span {
     color: green;
   }
-`
+`;
