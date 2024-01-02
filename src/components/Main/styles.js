@@ -1,25 +1,36 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.section`
+  background-color: green;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px auto;
-  width: 90%;
+  margin: 7vh auto 0px auto;
+  width: 70%;
 `;
 export const DivLeft = styled.div`
   img {
-    width: 100px;
-    border-radius: 100px;
+    width: 17rem;
   }
 `;
-export const DivRight = styled.div``;
-
-export const TecnologiesContainer = styled.div`
+export const DivRight = styled.div`
+  margin-left: 2vw;
+  font-size: 200%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  span {
+    transition: 0.35s;
+    cursor: pointer;
+  }
+  div:hover > :not(:hover) {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
 `;
+
+export const TecnologiesContainer = styled.div``;
 
 export const AboutMe = styled.section`
   background-color: darkblue;

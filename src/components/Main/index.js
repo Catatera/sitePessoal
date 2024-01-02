@@ -1,7 +1,7 @@
 import React from "react";
 import Tecnologies from "./Tecnologies";
 import ProjectCardItem from "./ProjectCardItem";
-import { ProfileContainer, DivRight, DivLeft, AboutMe, Projects } from "./styles";
+import {MainContainer, ProfileContainer, DivRight, DivLeft, AboutMe, Projects } from "./styles";
 import imgPerfil from "./images/bonito.jpeg";
 
 export default function Main() {
@@ -9,11 +9,13 @@ export default function Main() {
     <main>
       <ProfileContainer>
         <DivLeft>
-          <img src={imgPerfil} />
+          <img src={imgPerfil}/>
         </DivLeft>
         <DivRight>
-          <p>Gabriel Leonel,</p>
-          <h1>FRONT END DEVELOPER</h1>
+          <section>
+            <p>Gabriel Leonel,</p>
+            <h1>FRONT END DEVELOPER</h1>
+          </section>
           <Tecnologies />
         </DivRight>
       </ProfileContainer>
