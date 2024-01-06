@@ -9,9 +9,9 @@ export default createGlobalStyle`
     }
     body{
         min-height:100vh;
-        background-color:#222;
+        background-color:${(props) => props.theme.backgroundColor};
+        color:${(props) => props.theme.textColor};
         font-family:sans-serif;
-        color:#ffff;
         font-size:16px;
     }
 `;

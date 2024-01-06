@@ -1,5 +1,6 @@
 import React from "react";
-import {Container, Nav, Title} from "./styles"
+import { Container, Nav, Title } from "./styles"
+import { CiSun } from "react-icons/ci";
 
 export default function Header() { 
     return (
@@ -15,6 +16,9 @@ export default function Header() {
             </li>
             <li>
               <a href="#contacts">Contato</a>
+            </li>
+            <li>
+              <CiSun /* onClick={} *//>
             </li>
           </ul>
         </Nav>
