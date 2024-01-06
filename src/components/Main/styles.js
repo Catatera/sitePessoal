@@ -15,22 +15,43 @@ export const DivLeft = styled.div`
 `;
 export const DivRight = styled.div`
   margin-left: 2vw;
-  font-size: 200%;
+  font-size: 150%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  span {
-    transition: 0.35s;
-    cursor: pointer;
-  }
   div:hover > :not(:hover) {
     opacity: 0.2;
     transform: scale(0.9);
   }
 `;
 
-export const TecnologiesContainer = styled.div``;
+export const TecnologiesContainer = styled.div`
+  span {
+    
+    position: relative;
+    transition: 0.35s;
+    cursor: pointer;
+    &:hover::after {content:attr(aria-label);
+      opacity: 1;
+      pointer-events: all;
+      margin-bottom: 0;
+      left:0;
+      bottom: 10vh;
+    }
+    &::after {
+      position: absolute;
+      opacity: 0;
+      line-height: 25px;
+      padding: 0 10px;
+      font-size: 1.2rem;
+      text-align: center;
+      background: #222;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+  }
+`;
 
 export const AboutMe = styled.section`
   background-color: darkblue;
@@ -49,7 +70,7 @@ export const Projects = styled.section`
 export const ProjectCard = styled.article`
   margin: 0px auto;
   text-align: center;
-  width: 50vh;
+  width: 80vh;
   img {
     width: 100%;
   }

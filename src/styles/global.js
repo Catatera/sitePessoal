@@ -4,6 +4,9 @@ export default createGlobalStyle`
     *{
         margin:0px;
     }
+    html{
+        scroll-behavior:smooth;
+    }
     body{
         min-height:100vh;
         background-color:#222;

@@ -1,7 +1,14 @@
 import React from "react";
 import Tecnologies from "./Tecnologies";
 import ProjectCardItem from "./ProjectCardItem";
-import {MainContainer, ProfileContainer, DivRight, DivLeft, AboutMe, Projects } from "./styles";
+import {
+  MainContainer,
+  ProfileContainer,
+  DivRight,
+  DivLeft,
+  AboutMe,
+  Projects,
+} from "./styles";
 import imgPerfil from "./images/bonito.jpeg";
 
 export default function Main() {
@@ -9,17 +16,17 @@ export default function Main() {
     <main>
       <ProfileContainer>
         <DivLeft>
-          <img src={imgPerfil}/>
+          <img src={imgPerfil} />
         </DivLeft>
         <DivRight>
           <section>
-            <p>Gabriel Leonel,</p>
-            <h1>FRONT END DEVELOPER</h1>
+            <p>Olá, eu sou o Gabriel</p>
+            <h1>Desenvolvedor Front-End</h1>
           </section>
           <Tecnologies />
         </DivRight>
       </ProfileContainer>
-      <AboutMe>
+      <AboutMe id="aboutMe">
         <h2>About Me</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -33,13 +40,13 @@ export default function Main() {
           including versions of Lorem Ipsum.
         </p>
       </AboutMe>
-      <Projects>
-        <ProjectCardItem />
-        <ProjectCardItem />
-        <ProjectCardItem />
-        <ProjectCardItem />
-        <ProjectCardItem />
-        <ProjectCardItem />
+      <Projects id="projects">
+        <ProjectCardItem idProjeto={1} />
+        <ProjectCardItem idProjeto={2} />
+        <ProjectCardItem idProjeto={3} />
+        <ProjectCardItem idProjeto={4} />
+        <ProjectCardItem idProjeto={5} />
+        <ProjectCardItem idProjeto={6} />
       </Projects>
     </main>
   );

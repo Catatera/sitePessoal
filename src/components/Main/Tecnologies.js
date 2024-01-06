@@ -14,39 +14,35 @@ import { IoLogoJavascript } from "react-icons/io5";
 export default function Tecnologies() {
   return (
     <TecnologiesContainer>
-      <span>
-        <DiHtml5 size={"8vh"} color="#e5532d" title="HTML5" />
+      <span aria-label="HTML5">
+        <DiHtml5 size={"8vh"} color="#e5532d" />
       </span>
-      <span>
-        <DiCss3 size={"8vh"} color="#3d9dd7" title="CSS3" />
+      <span aria-label="CSS3">
+        <DiCss3 size={"8vh"} color="#3d9dd7" />
       </span>
-      <span>
-        <IoLogoJavascript size={"8vh"} color="#ff0" title="JavaScript" />
+      <span aria-label="JavaScript">
+        <IoLogoJavascript size={"8vh"} color="#ff0" />
       </span>
-      <span>
-        <DiReact size={"8vh"} color="#66dbfb" title="React" />
+      <span aria-label="React">
+        <DiReact size={"8vh"} color="#66dbfb" />
       </span>
-      <span>
-        <DiGit size={"8vh"} color="#f05639" title="Git" />
+      <span aria-label="Git">
+        <DiGit size={"8vh"} color="#f05639" />
       </span>
-      <span>
-        <DiGithubBadge size={"8vh"} color="#ffff" title="GitHub" />
+      <span aria-label="GitHub">
+        <DiGithubBadge size={"8vh"} color="#ffff" />
       </span>
-      <span>
-        <SiStyledcomponents
-          size={"8vh"}
-          color="#ffff"
-          title="Styled Components"
-        />
+      <span aria-label="Styled Components">
+        <SiStyledcomponents size={"8vh"} color="#ffff" />
       </span>
-      <span>
-        <SiBabel size={"8vh"} color="#f9dd44" title="Babel" />
+      <span aria-label="Babel">
+        <SiBabel size={"8vh"} color="#f9dd44" />
       </span>
-      <span>
-        <SiWebpack size={"8vh"} color="#92d7fb" title="WebPack" />
+      <span aria-label="WebPack">
+        <SiWebpack size={"8vh"} color="#92d7fb" />
       </span>
-      <span>
-        <DiSass size={"8vh"} color="#c96f9c" title="Sass" />
+      <span aria-label="Sass">
+        <DiSass size={"8vh"} color="#c96f9c" />
       </span>
     </TecnologiesContainer>
   );

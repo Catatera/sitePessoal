@@ -3,14 +3,19 @@ import {Container, Nav, Title} from "./styles"
 
 export default function Header() { 
     return (
-      <Container >
+      <Container>
         <Title>Gabriel Leonel</Title>
         <Nav>
           <ul>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Projetos</li>
-            <li>Contato</li>
+            <li>
+              <a href="#aboutMe">Sobre</a>
+            </li>
+            <li>
+              <a href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a href="#contacts">Contato</a>
+            </li>
           </ul>
         </Nav>
       </Container>

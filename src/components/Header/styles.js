@@ -12,6 +12,11 @@ export const Title = styled.h1`
 `;
 
 export const Nav = styled.nav`
+ul{
+  display:flex;
+  flex-direction:row;
+  gap:2rem;
+}
   li {
     display: inline;
     margin: 0px 1vw;

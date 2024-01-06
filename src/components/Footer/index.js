@@ -3,7 +3,7 @@ import { Container } from "./styles";
 import { FaLinkedin, FaGithubSquare, FaWhatsappSquare } from "react-icons/fa";
 export default function Footer() {
   return (
-    <Container>
+    <Container id="contacts">
       <p>
         Desenvolvido por{" "}
         <a href="https://github.com/catatera" target="_blank">
