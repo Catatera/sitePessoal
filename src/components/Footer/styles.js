@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  background-color: gray;
+  background-color: ${(props) => props.theme.headerBackgroundColor};
   height: 8vh;
   display: flex;
   justify-content: space-around;

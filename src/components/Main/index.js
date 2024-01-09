@@ -51,10 +51,6 @@ export default function Main() {
       <Projects id="projects">
         <ProjectCardItem idProjeto={1} />
         <ProjectCardItem idProjeto={2} />
-        <ProjectCardItem idProjeto={3} />
-        <ProjectCardItem idProjeto={4} />
-        <ProjectCardItem idProjeto={5} />
-        <ProjectCardItem idProjeto={6} />
       </Projects>
     </main>
   );
