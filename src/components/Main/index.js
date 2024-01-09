@@ -2,10 +2,10 @@ import React from "react";
 import Tecnologies from "./Tecnologies";
 import ProjectCardItem from "./ProjectCardItem";
 import {
-  MainContainer,
   ProfileContainer,
   DivRight,
   DivLeft,
+  ProfileButtons,
   AboutMe,
   Projects,
 } from "./styles";
@@ -26,6 +26,14 @@ export default function Main() {
           <Tecnologies />
         </DivRight>
       </ProfileContainer>
+      <ProfileButtons>
+        <a href="">
+          <button>LinkedIn</button>
+        </a>
+        <a href="">
+          <button>GitHub</button>
+        </a>
+      </ProfileButtons>
       <AboutMe id="aboutMe">
         <h2>About Me</h2>
         <p>

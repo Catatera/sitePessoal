@@ -8,36 +8,41 @@ export const ProfileContainer = styled.section`
   margin: 7vh auto 0px auto;
   width: 70%;
 `;
-export const DivLeft = styled.div`
+export const DivLeft = styled.section`
   img {
     width: 17rem;
   }
 `;
-export const DivRight = styled.div`
+export const DivRight = styled.section`
   margin-left: 2vw;
   font-size: 150%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  div:hover > :not(:hover) {
-    opacity: 0.2;
-    transform: scale(0.9);
+`;
+
+export const ProfileButtons = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  a {
+    margin: 3% 3%;
+    button {
+      padding: 1.7vh 3vw;
+      border-radius: 20px;
+    }
   }
 `;
 
-export const TecnologiesContainer = styled.div`
+export const TecnologiesContainer = styled.section`
   span {
-    
-    position: relative;
-    transition: 0.35s;
-    cursor: pointer;
-    &:hover::after {content:attr(aria-label);
+    &:hover::after {
+      content: attr(aria-label);
       opacity: 1;
       pointer-events: all;
       margin-bottom: 0;
-      left:0;
-      bottom: 10vh;
     }
     &::after {
       position: absolute;
@@ -46,16 +51,23 @@ export const TecnologiesContainer = styled.div`
       padding: 0 10px;
       font-size: 1.2rem;
       text-align: center;
-      background: #222;
+      background: #000000d9;
       border-radius: 4px;
       white-space: nowrap;
     }
+  }
+  &:hover > :not(:hover) {
+    opacity: 0.2;
+    transform: scale(0.9);
+    position: relative;
+    transition: 0.35s;
+    cursor: pointer;
   }
 `;
 
 export const AboutMe = styled.section`
   background-color: darkblue;
-  margin: 0px auto;
+  margin: 10% auto 5vh auto;
   text-align: center;
   width: 60%;
 `;

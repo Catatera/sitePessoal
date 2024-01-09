@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Nav, Title } from "./styles"
 import { CiSun } from "react-icons/ci";
 
-export default function Header() { 
+export default function Header(props) { 
     return (
       <Container>
-        <Title>Gabriel Leonel</Title>
+        <Title>&lt;GL/&gt;</Title>
         <Nav>
           <ul>
             <li>
@@ -18,7 +18,7 @@ export default function Header() {
               <a href="#contacts">Contato</a>
             </li>
             <li>
-              <CiSun /* onClick={} *//>
+              <CiSun onClick={props.onToggleTheme} />
             </li>
           </ul>
         </Nav>
