@@ -9,7 +9,7 @@ export default createGlobalStyle`
     }
     body{
         min-height:100vh;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family:"Roboto", sans-serif;
         font-size:16px;
         transition:.25s;
         background-color:${(props) => props.theme.backgroundColor};

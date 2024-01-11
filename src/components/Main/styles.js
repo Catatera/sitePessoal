@@ -7,10 +7,13 @@ export const ProfileContainer = styled.section`
   justify-content: center;
   margin: 7vh auto 0px auto;
   width: 70%;
+  box-shadow: 0px 3px 14px 4px
+    ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
 `;
 export const DivLeft = styled.section`
   img {
-    width: 17rem;
+    width: 16rem;
+    border-radius: 80%;
   }
 `;
 export const DivRight = styled.section`
@@ -27,6 +30,7 @@ export const ProfileButtons = styled.section`
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
   a {
     margin: 3% 3%;
     button {
@@ -34,8 +38,7 @@ export const ProfileButtons = styled.section`
       position: relative;
       padding: 1vw 2vh;
       display: flex;
-      align-items: center;
-      font-size: 17px;
+      font-size: 1.2rem;
       font-weight: 600;
       text-decoration: none;
       cursor: pointer;
@@ -68,15 +71,17 @@ export const ProfileButtons = styled.section`
       color: #fff;
       border: 1px solid #fff;
     }
-
-    button:hover::before {
-      box-shadow: inset 0 0 0 10em #fff;
+    .linkedIn:hover::before {
+      box-shadow: inset 0 0 0 10em #0a66c2;
+    }
+    .gitHub:hover::before {
+      box-shadow: inset 0 0 0 10em #6e5494;
     }
   }
 `;
 
 export const TecnologiesContainer = styled.section`
-  span {
+  svg {
     &:hover::after {
       content: attr(aria-label);
       opacity: 1;
@@ -95,7 +100,11 @@ export const TecnologiesContainer = styled.section`
       white-space: nowrap;
     }
   }
+  &:hover {
+    color: #18d0ffde;
+  }
   &:hover > :not(:hover) {
+    color: #fff;
     opacity: 0.2;
     transform: scale(0.9);
     position: relative;

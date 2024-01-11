@@ -10,6 +10,8 @@ import {
   Projects,
 } from "./styles";
 import imgPerfil from "./images/bonito.jpeg";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Main() {
   return (
@@ -28,10 +30,16 @@ export default function Main() {
       </ProfileContainer>
       <ProfileButtons>
         <a href="">
-          <button>LinkedIn</button>
+          <button className="linkedIn">
+            <FaLinkedin />
+            LinkedIn
+          </button>
         </a>
         <a href="">
-          <button>GitHub</button>
+          <button className="gitHub">
+            <TbBrandGithubFilled />
+            GitHub
+          </button>
         </a>
       </ProfileButtons>
       <AboutMe id="aboutMe">
@@ -52,6 +60,7 @@ export default function Main() {
         <ProjectCardItem idProjeto={1} />
         <ProjectCardItem idProjeto={2} />
       </Projects>
+      
     </main>
   );
 }

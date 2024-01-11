@@ -11,38 +11,38 @@ import {
 import { SiBabel, SiStyledcomponents, SiWebpack } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 
-export default function Tecnologies() {
+export default function Tecnologies() { 
   return (
     <TecnologiesContainer>
       <span aria-label="HTML5">
-        <DiHtml5 size={"8vh"} color="#e5532d" />
+        <DiHtml5 size={"8vh"} />
       </span>
       <span aria-label="CSS3">
-        <DiCss3 size={"8vh"} color="#3d9dd7" />
+        <DiCss3 size={"8vh"}  />
       </span>
       <span aria-label="JavaScript">
-        <IoLogoJavascript size={"8vh"} color="#ff0" />
+        <IoLogoJavascript size={"8vh"} />
       </span>
       <span aria-label="React">
-        <DiReact size={"8vh"} color="#66dbfb" />
+        <DiReact size={"8vh"} />
       </span>
       <span aria-label="Git">
-        <DiGit size={"8vh"} color="#f05639" />
+        <DiGit size={"8vh"} />
       </span>
       <span aria-label="GitHub">
-        <DiGithubBadge size={"8vh"} color="#ffff" />
+        <DiGithubBadge size={"8vh"} />
       </span>
       <span aria-label="Styled Components">
-        <SiStyledcomponents size={"8vh"} color="#ffff" />
+        <SiStyledcomponents size={"8vh"} />
       </span>
       <span aria-label="Babel">
-        <SiBabel size={"8vh"} color="#f9dd44" />
+        <SiBabel size={"8vh"} />
       </span>
       <span aria-label="WebPack">
-        <SiWebpack size={"8vh"} color="#92d7fb" />
+        <SiWebpack size={"8vh"} />
       </span>
       <span aria-label="Sass">
-        <DiSass size={"8vh"} color="#c96f9c" />
+        <DiSass size={"8vh"} />
       </span>
     </TecnologiesContainer>
   );

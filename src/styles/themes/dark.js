@@ -5,4 +5,5 @@ export default {
   headerBackgroundColor: "#151515",
   backgroundColor: "#121212",
   textColor: "#fff",
+  activeTheme:"dark",
 };
