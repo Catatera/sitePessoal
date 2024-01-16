@@ -1,6 +1,8 @@
 import React from "react";
 import Tecnologies from "./Tecnologies";
 import ProjectCardItem from "./ProjectCardItem";
+import projectGetKcalImg from "./images/projectGetKcal.png";
+
 import {
   ProfileContainer,
   DivRight,
@@ -9,7 +11,7 @@ import {
   AboutMe,
   Projects,
 } from "./styles";
-import imgPerfil from "./images/bonito.jpeg";
+import profileImg from "./images/bonito.jpeg";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -18,7 +20,7 @@ export default function Main() {
     <main>
       <ProfileContainer>
         <DivLeft>
-          <img src={imgPerfil} />
+          <img src={profileImg} />
         </DivLeft>
         <DivRight>
           <section>
@@ -57,10 +59,9 @@ export default function Main() {
         </p>
       </AboutMe>
       <Projects id="projects">
-        <ProjectCardItem idProjeto={1} />
-        <ProjectCardItem idProjeto={2} />
+        <ProjectCardItem projectId={1} projectName={projectGetKcalImg} />
+        <ProjectCardItem projectId={2} />
       </Projects>
-      
     </main>
   );
 }

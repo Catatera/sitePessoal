@@ -11,14 +11,14 @@ export const Container = styled.header`
   box-shadow: 0px 1px 1px #808080;
 `;
 export const Title = styled.h1`
-  margin-left: 1vw;
+  margin-left: 1%;
 `;
 
 export const Nav = styled.nav`
   ul {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.2rem;
   }
   li {
     display: inline;

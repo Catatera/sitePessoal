@@ -1,18 +1,13 @@
 import React from "react";
 import { ProjectCard } from "./styles";
-import placeholder from "./images/feia.jpeg";
 export default function ProjectCardItem(props) {
   return (
     <ProjectCard>
       <figure>
-        <img
-          src={
-            "https://www.rpnation.com/gallery/250-x-250-placeholder.30091/full?d=1504582354"
-          }
-        ></img>
+        <img src={props.projectName}></img>
       </figure>
       <figcaption>
-        <h3>Projeto #{props.idProjeto}</h3>
+        <h3>Projeto #{props.projectId}</h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

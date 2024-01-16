@@ -5,7 +5,7 @@ export const ProfileContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 7vh auto 0px auto;
+  margin: 8vw auto 0px auto;
   width: 70%;
   box-shadow: 0px 3px 14px 4px
     ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
@@ -32,6 +32,7 @@ export const ProfileButtons = styled.section`
   flex-wrap: wrap;
 
   a {
+    text-decoration: none;
     margin: 3% 3%;
     button {
       background: transparent;
@@ -40,9 +41,8 @@ export const ProfileButtons = styled.section`
       display: flex;
       font-size: 1.2rem;
       font-weight: 600;
-      text-decoration: none;
       cursor: pointer;
-      border: 1px solid #ffffff;
+      border: 1px solid #ffffff00;
       border-radius: 25px;
       outline: none;
       overflow: hidden;
@@ -64,12 +64,11 @@ export const ProfileButtons = styled.section`
       height: 20em;
       left: -5em;
       text-align: center;
-      transition: box-shadow 0.5s ease-out;
+      transition: box-shadow 0.3s ease-out;
       z-index: -1;
     }
     button:hover {
       color: #fff;
-      border: 1px solid #fff;
     }
     .linkedIn:hover::before {
       box-shadow: inset 0 0 0 10em #0a66c2;
