@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.section`
-  background-color: #151515;
+  background-color: ${(props) =>
+    props.theme.activeTheme == "light" ? "#f2f2f2" : "#191919"};
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 8vw auto 0px auto;
+  padding: 2vw 0px;
   width: 70%;
   box-shadow: 0px 3px 14px 4px
     ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
@@ -30,7 +32,6 @@ export const ProfileButtons = styled.section`
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-
   a {
     text-decoration: none;
     margin: 3% 3%;
@@ -46,7 +47,8 @@ export const ProfileButtons = styled.section`
       border-radius: 25px;
       outline: none;
       overflow: hidden;
-      color: #ffffff;
+      color: ${(props) =>
+        props.theme.activeTheme == "light" ? "#808080" : "#ffff"};
       transition: color 0.3s 0.1s ease-out;
       text-align: center;
     }
@@ -80,6 +82,10 @@ export const ProfileButtons = styled.section`
 `;
 
 export const TecnologiesContainer = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
   svg {
     &:hover::after {
       content: attr(aria-label);
@@ -113,10 +119,20 @@ export const TecnologiesContainer = styled.section`
 `;
 
 export const AboutMe = styled.section`
-  background-color: darkblue;
+  background-color: ${(props) =>
+    props.theme.activeTheme == "light" ? "#f9f2f2" : "#191919"};
+  box-shadow: 0px 5px 10px 0px
+    ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
+    text-align:center;
   margin: 10% auto 5vh auto;
-  text-align: center;
-  width: 60%;
+  width: 70%;
+  padding: 0px 2vw;
+  h2{
+    padding:1vh 0px;
+  }
+  span {
+    color: #18d0ffde;
+  }
 `;
 export const Projects = styled.section`
   width: 70%;

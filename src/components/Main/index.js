@@ -44,18 +44,18 @@ export default function Main() {
           </button>
         </a>
       </ProfileButtons>
-      <AboutMe id="aboutMe">
-        <h2>About Me</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+      <AboutMe id="aboutMe" style={{ fontSize: "clamp(1em, 0.2em + 3.3vw, 1.5em)" }}>
+        <h2>Sobre Mim</h2>
+        <p >
+          Meu nome é Gabriel Leonel e sou apaixonado por tecnologia,
+          especificamente na área de desenvolvimento WEB. Atualmente
+          sou um estudante de programação pelo CST de Sistemas para Internet,
+          me empenhando para me tornar um desenvolvedor FullStack. Possuo domínio das
+          tecnologias fundamentais para o Front-End: <span>HTML, CSS e JS</span>,
+          juntamente com o FrameWork <span>React.js</span> com <span>Styled Components</span> para a estilização, me permitindo criar
+          aplicações interativas para o lado do cliente. Atualmente, estou me dedicando ao <span>Node.js</span> e <span>MySQL</span> para também desenvolver no Back-End. Estou em busca de novas
+          experiências profissionais e procurando melhorar minhas habilidades na
+          área da programação.
         </p>
       </AboutMe>
       <Projects id="projects">

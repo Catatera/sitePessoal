@@ -2,7 +2,8 @@ import commonStyles from "../global";
 
 export default {
   ...commonStyles,
-  backgroundColor: "#fff",
+  headerBackgroundColor: "#f2f2f2",
+  backgroundColor: "#e8e5e5",
   textColor: "#222",
-  activeTheme:"light",
+  activeTheme: "light",
 };
