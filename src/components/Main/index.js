@@ -54,15 +54,22 @@ export default function Main() {
           especificamente na área de desenvolvimento WEB. Atualmente sou um
           estudante de programação pelo curso Tecnólogo de Sistemas para
           Internet, me empenhando para me tornar um desenvolvedor
-          <span>Front-End</span>, de modo que possa transformar minhas ideias em realidade, combinando habilidades técnicas e criatividade. Possuo domínio das principais tecnologias do
-          mercado: <span>HTML</span>, <span>CSS</span>, <span>JavaSript</span>,
-          <span>React</span>, <span>Styled-Components</span>, <span>SASS</span>,
-          <span>Git</span> e <span>GitHub</span>.
+          <span>Front-End</span>, de modo que possa transformar minhas ideias em
+          realidade, combinando habilidades técnicas e criatividade. Possuo
+          domínio das principais tecnologias do mercado: <span>HTML</span>,{" "}
+          <span>CSS</span>, <span>JavaSript</span>,<span>React</span>,{" "}
+          <span>Styled-Components</span>, <span>SASS</span>,<span>Git</span> e{" "}
+          <span>GitHub</span>.
         </p>
       </AboutMe>
       <Projects id="projects">
-        <ProjectCardItem projectName={"CaloriesCalculator"} projectImg={projectGetKcalImg}/>
-        <ProjectCardItem projectName={"em andamento"} />
+        <ProjectCardItem
+          projectName={"CaloriesCalculator"}
+          projectImg={projectGetKcalImg}
+          usedTecnologies={["FaJs"]}
+        />
+        {/*         <ProjectCardItem projectName={"em andamento"} />
+         */}{" "}
       </Projects>
     </main>
   );

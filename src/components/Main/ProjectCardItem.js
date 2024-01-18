@@ -1,8 +1,11 @@
 import React from "react";
 import { ProjectCard } from "./styles";
+import { FaJs } from "react-icons/fa6";
 export default function ProjectCardItem(props) {
+  console.log(props.usedTecnologies);
   return (
     <ProjectCard>
+      {props.usedTecnologies.includes("FaJs") ? <FaJs/> : "null" }
       <figure>
         <img src={props.projectImg}></img>
       </figure>
