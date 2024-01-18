@@ -4,10 +4,10 @@ export default function ProjectCardItem(props) {
   return (
     <ProjectCard>
       <figure>
-        <img src={props.projectName}></img>
+        <img src={props.projectImg}></img>
       </figure>
       <figcaption>
-        <h3>Projeto #{props.projectId}</h3>
+        <h3>Projeto {props.projectName}</h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

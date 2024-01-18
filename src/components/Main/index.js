@@ -44,23 +44,25 @@ export default function Main() {
           </button>
         </a>
       </ProfileButtons>
-      <AboutMe id="aboutMe" style={{ fontSize: "clamp(1em, 0.2em + 3.3vw, 1.5em)" }}>
+      <AboutMe
+        id="aboutMe"
+        style={{ fontSize: "clamp(1em, 0.2em + 3.3vw, 1.5em)" }}
+      >
         <h2>Sobre Mim</h2>
-        <p >
-          Meu nome é Gabriel Leonel e sou apaixonado por tecnologia,
-          especificamente na área de desenvolvimento WEB. Atualmente
-          sou um estudante de programação pelo CST de Sistemas para Internet,
-          me empenhando para me tornar um desenvolvedor FullStack. Possuo domínio das
-          tecnologias fundamentais para o Front-End: <span>HTML, CSS e JS</span>,
-          juntamente com o FrameWork <span>React.js</span> com <span>Styled Components</span> para a estilização, me permitindo criar
-          aplicações interativas para o lado do cliente. Atualmente, estou me dedicando ao <span>Node.js</span> e <span>MySQL</span> para também desenvolver no Back-End. Estou em busca de novas
-          experiências profissionais e procurando melhorar minhas habilidades na
-          área da programação.
+        <p>
+          Meu nome é Gabriel Leonel e sou apaixonado por tecnologia, mais
+          especificamente na área de desenvolvimento WEB. Atualmente sou um
+          estudante de programação pelo curso Tecnólogo de Sistemas para
+          Internet, me empenhando para me tornar um desenvolvedor
+          <span>Front-End</span>, de modo que possa transformar minhas ideias em realidade, combinando habilidades técnicas e criatividade. Possuo domínio das principais tecnologias do
+          mercado: <span>HTML</span>, <span>CSS</span>, <span>JavaSript</span>,
+          <span>React</span>, <span>Styled-Components</span>, <span>SASS</span>,
+          <span>Git</span> e <span>GitHub</span>.
         </p>
       </AboutMe>
       <Projects id="projects">
-        <ProjectCardItem projectId={1} projectName={projectGetKcalImg} />
-        <ProjectCardItem projectId={2} />
+        <ProjectCardItem projectName={"CaloriesCalculator"} projectImg={projectGetKcalImg}/>
+        <ProjectCardItem projectName={"em andamento"} />
       </Projects>
     </main>
   );
