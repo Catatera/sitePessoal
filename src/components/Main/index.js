@@ -3,32 +3,28 @@ import Tecnologies from "./Tecnologies";
 import ProjectCardItem from "./ProjectCardItem";
 import projectGetKcalImg from "./images/projectGetKcal.png";
 
-import {
-  ProfileContainer,
-  DivRight,
-  DivLeft,
-  ProfileButtons,
-  AboutMe,
-  Projects,
-} from "./styles";
+import { ProfileContainer, ProfileButtons, AboutMe, Projects } from "./styles";
 import profileImg from "./images/bonito.jpeg";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import { FaLinkedin } from "react-icons/fa";
+import { FaJs, FaHtml5, FaCss3, FaLinkedin } from "react-icons/fa";
 
+const allTecnologies = [
+  <FaHtml5 size="30px" />,
+  <FaCss3 size="30px" />,
+  <FaJs size="30px" />,
+];
 export default function Main() {
   return (
     <main>
       <ProfileContainer>
-        <DivLeft>
+        <section id="divLeft">
           <img src={profileImg} />
-        </DivLeft>
-        <DivRight>
-          <section>
-            <p>Olá, eu sou o Gabriel</p>
-            <h1>Desenvolvedor Front-End</h1>
-          </section>
+        </section>
+        <section id="divRight">
+          <p>Olá, eu sou o Gabriel</p>
+          <h1>Desenvolvedor Front-End</h1>
           <Tecnologies />
-        </DivRight>
+        </section>
       </ProfileContainer>
       <ProfileButtons>
         <a href="">
@@ -53,7 +49,7 @@ export default function Main() {
           Meu nome é Gabriel Leonel e sou apaixonado por tecnologia, mais
           especificamente na área de desenvolvimento WEB. Atualmente sou um
           estudante de programação pelo curso Tecnólogo de Sistemas para
-          Internet, me empenhando para me tornar um desenvolvedor
+          Internet, me empenhando para me tornar um desenvolvedor{" "}
           <span>Front-End</span>, de modo que possa transformar minhas ideias em
           realidade, combinando habilidades técnicas e criatividade. Possuo
           domínio das principais tecnologias do mercado: <span>HTML</span>,{" "}
@@ -66,10 +62,10 @@ export default function Main() {
         <ProjectCardItem
           projectName={"CaloriesCalculator"}
           projectImg={projectGetKcalImg}
-          usedTecnologies={["FaJs"]}
+          content={`Um site para ajudar os usuários a calcularem sua taxa metabólica basal. O  usuário deve digitar suas informações fisiológicas, como sexo, idade, altura e peso. Em seguida, ao informar seu nível de atividade física diário, o formulário irá devolver todas as informações para o usuário, como sua taxa metabólica basal, a quantidade de calorias a serem ingeridas diariamente caso deseje manter, aumentar ou perder seu peso atual.`}
+          usedTecnologies={allTecnologies.slice(0, 2)}
         />
-        {/*         <ProjectCardItem projectName={"em andamento"} />
-         */}{" "}
+        {/* <ProjectCardItem projectName={"em andamento"} usedTecnologies={[""]} /> */}
       </Projects>
     </main>
   );

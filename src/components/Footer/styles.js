@@ -14,4 +14,7 @@ export const Container = styled.footer`
       font-size: 160%;
     }
   }
+  svg {
+    color: ${(props) => (props.theme.activeTheme === "dark" ? "#fff" : "#222")};
+  }
 `;

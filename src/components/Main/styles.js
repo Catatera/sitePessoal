@@ -8,23 +8,26 @@ export const ProfileContainer = styled.section`
   justify-content: center;
   margin: 8vw auto 0px auto;
   padding: 2vw 0px;
-  width: 70%;
-  box-shadow: 0px 3px 14px 4px
+  width: 80%;
+  box-shadow: 0px 3px 10px 1px
     ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
-`;
-export const DivLeft = styled.section`
-  img {
-    width: 16rem;
-    border-radius: 80%;
+  #divLeft {
+    img {
+      width: 16rem;
+      border-radius: 80%;
+    }
   }
-`;
-export const DivRight = styled.section`
-  margin-left: 2vw;
-  font-size: 150%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  #divRight {
+    margin-left: 2vw;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    h1 {
+      color: #18d0ffde;
+    }
+  }
 `;
 
 export const ProfileButtons = styled.section`
@@ -48,7 +51,7 @@ export const ProfileButtons = styled.section`
       outline: none;
       overflow: hidden;
       color: ${(props) =>
-        props.theme.activeTheme == "light" ? "#808080" : "#ffff"};
+        props.theme.activeTheme == "light" ? "#222" : "#ffff"};
       transition: color 0.3s 0.1s ease-out;
       text-align: center;
     }
@@ -123,12 +126,12 @@ export const AboutMe = styled.section`
     props.theme.activeTheme == "light" ? "#f9f2f2" : "#191919"};
   box-shadow: 0px 5px 10px 0px
     ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
-    text-align:center;
+  text-align: center;
   margin: 10% auto 5vh auto;
   width: 70%;
   padding: 0px 2vw;
-  h2{
-    padding:1vh 0px;
+  h2 {
+    padding: 1vh 0px;
   }
   span {
     color: #18d0ffde;
@@ -151,5 +154,12 @@ export const ProjectCard = styled.article`
   }
   figcaption {
     margin: 1vw 0px 5vh 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:left;
+  }
+  svg {
+    color: ${(props) => (props.theme.activeTheme === "dark" ? "#fff" : "#222")};
   }
 `;
