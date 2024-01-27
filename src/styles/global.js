@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import backgroundDarkImg from "./themes/backgroundDark.jpg"
+import backgroundLightImg from "./themes/backgroundLight.jpg"
 
 export default createGlobalStyle`
     *{
@@ -10,9 +12,9 @@ export default createGlobalStyle`
     body{
         min-height:100vh;
         font-family:"Roboto", sans-serif;
-        font-size:16px;
+        font-size:18px;
         transition:.25s;
-        background-color:${(props) => props.theme.backgroundColor};
+        background-image:url(${(props)=>props.theme.activeTheme==="dark"? backgroundDarkImg : backgroundLightImg});
         color:${(props) => props.theme.textColor};
     }
 `;

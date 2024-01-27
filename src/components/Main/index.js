@@ -1,7 +1,7 @@
 import React from "react";
 import Tecnologies from "./Tecnologies";
 import ProjectCardItem from "./ProjectCardItem";
-import projectGetKcalImg from "./images/projectGetKcal.png";
+import projectGetKcalImg from "./images/projectGetKcal.jpeg";
 
 import { ProfileContainer, ProfileButtons, AboutMe, Projects } from "./styles";
 import profileImg from "./images/bonito.jpeg";
@@ -27,13 +27,16 @@ export default function Main() {
         </section>
       </ProfileContainer>
       <ProfileButtons>
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/gabriel-leonel-silva/"
+          target="_blank"
+        >
           <button className="linkedIn">
             <FaLinkedin />
             LinkedIn
           </button>
         </a>
-        <a href="">
+        <a href="https://github.com/catatera" target="_blank">
           <button className="gitHub">
             <TbBrandGithubFilled />
             GitHub
@@ -53,8 +56,8 @@ export default function Main() {
           <span>Front-End</span>, de modo que possa transformar minhas ideias em
           realidade, combinando habilidades técnicas e criatividade. Possuo
           domínio das principais tecnologias do mercado: <span>HTML</span>,{" "}
-          <span>CSS</span>, <span>JavaSript</span>,<span>React</span>,{" "}
-          <span>Styled-Components</span>, <span>SASS</span>,<span>Git</span> e{" "}
+          <span>CSS</span>, <span>JavaSript</span>, <span>React</span>,{" "}
+          <span>Styled-Components</span>, <span>SASS</span>, <span>Git</span> e{" "}
           <span>GitHub</span>.
         </p>
       </AboutMe>
@@ -62,10 +65,15 @@ export default function Main() {
         <ProjectCardItem
           projectName={"CaloriesCalculator"}
           projectImg={projectGetKcalImg}
-          content={`Um site para ajudar os usuários a calcularem sua taxa metabólica basal. O  usuário deve digitar suas informações fisiológicas, como sexo, idade, altura e peso. Em seguida, ao informar seu nível de atividade física diário, o formulário irá devolver todas as informações para o usuário, como sua taxa metabólica basal, a quantidade de calorias a serem ingeridas diariamente caso deseje manter, aumentar ou perder seu peso atual.`}
+          content={`Uma ferramenta para ajudar os usuários a calcularem sua taxa metabólica basal.`}
           usedTecnologies={allTecnologies.slice(0, 2)}
         />
-        {/* <ProjectCardItem projectName={"em andamento"} usedTecnologies={[""]} /> */}
+        <ProjectCardItem
+          projectName={"em andamento"}
+          projectImg={projectGetKcalImg}
+          content={`...`}
+          usedTecnologies={[""]}
+        />
       </Projects>
     </main>
   );

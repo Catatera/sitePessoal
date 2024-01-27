@@ -21,7 +21,7 @@ export default function App() {
     <>
       <ThemeProvider theme={ currentTheme }>
         <GlobalStyle />
-        <Header onToggleTheme={handleToggleTheme} />
+        <Header onToggleTheme={handleToggleTheme} selectedTheme={theme} />
         <Main />
         <Footer />
       </ThemeProvider>

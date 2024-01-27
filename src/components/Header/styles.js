@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
   position: sticky;
   top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +36,10 @@ export const Nav = styled.nav`
     }
     a:hover {
       transition: 0.2s;
-      color: #808080;
+      color: #18d0ffde;
+    }
+    svg{
+      cursor: pointer;
     }
   }
 `;

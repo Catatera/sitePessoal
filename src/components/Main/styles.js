@@ -3,30 +3,74 @@ import styled from "styled-components";
 export const ProfileContainer = styled.section`
   background-color: ${(props) =>
     props.theme.activeTheme == "light" ? "#f2f2f2" : "#191919"};
+  border-radius: 0.5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 8vw auto 0px auto;
   padding: 2vw 0px;
   width: 80%;
+  max-width: 1250px;
   box-shadow: 0px 3px 10px 1px
     ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
   #divLeft {
     img {
       width: 16rem;
-      border-radius: 80%;
+      border-radius: 2%;
     }
   }
   #divRight {
-    margin-left: 2vw;
+    margin-left: 2%;
     font-size: 150%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    p,
+    h1 {
+      margin: 0px 20px;
+    }
     h1 {
       color: #18d0ffde;
     }
+  }
+`;
+
+export const TecnologiesContainer = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px 7px;
+  svg {
+    &:hover::after {
+      content: attr(aria-label);
+      opacity: 1;
+      pointer-events: all;
+      margin-bottom: 0;
+    }
+    &::after {
+      position: absolute;
+      opacity: 0;
+      line-height: 25px;
+      padding: 0 10px;
+      font-size: 1.2rem;
+      text-align: center;
+      background: #000000d9;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+  }
+  &:hover {
+    color: #18d0ffde;
+  }
+  &:hover > :not(:hover) {
+    color: #fff;
+    opacity: 0.2;
+    transform: scale(0.9);
+    position: relative;
+    transition: 0.35s;
+    cursor: pointer;
   }
 `;
 
@@ -84,57 +128,26 @@ export const ProfileButtons = styled.section`
   }
 `;
 
-export const TecnologiesContainer = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  svg {
-    &:hover::after {
-      content: attr(aria-label);
-      opacity: 1;
-      pointer-events: all;
-      margin-bottom: 0;
-    }
-    &::after {
-      position: absolute;
-      opacity: 0;
-      line-height: 25px;
-      padding: 0 10px;
-      font-size: 1.2rem;
-      text-align: center;
-      background: #000000d9;
-      border-radius: 4px;
-      white-space: nowrap;
-    }
-  }
-  &:hover {
-    color: #18d0ffde;
-  }
-  &:hover > :not(:hover) {
-    color: #fff;
-    opacity: 0.2;
-    transform: scale(0.9);
-    position: relative;
-    transition: 0.35s;
-    cursor: pointer;
-  }
-`;
-
 export const AboutMe = styled.section`
   background-color: ${(props) =>
-    props.theme.activeTheme == "light" ? "#f9f2f2" : "#191919"};
+    props.theme.activeTheme == "light" ? "#f2f2f2" : "#191919"};
   box-shadow: 0px 5px 10px 0px
     ${(props) => (props.theme.activeTheme == "light" ? "#808080" : "#191919")};
   text-align: center;
-  margin: 10% auto 5vh auto;
+  margin: 17% auto;
   width: 70%;
-  padding: 0px 2vw;
+  max-width: 1250px;
   h2 {
-    padding: 1vh 0px;
+    padding: 3% 0px 1vh 0px;
   }
-  span {
-    color: #18d0ffde;
+  p {
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    margin: 0px 6vw;
+    padding-bottom: 3%;
+    span {
+      color: #18d0ffde;
+    }
   }
 `;
 export const Projects = styled.section`
@@ -146,9 +159,10 @@ export const Projects = styled.section`
 `;
 
 export const ProjectCard = styled.article`
-  margin: 0px auto;
+  margin: 5% auto;
   text-align: center;
   width: 80vh;
+
   img {
     width: 100%;
   }
@@ -157,7 +171,11 @@ export const ProjectCard = styled.article`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align:left;
+    text-align: left;
+    p {
+      line-height: 150%;
+      letter-spacing: 0.05rem;
+    }
   }
   svg {
     color: ${(props) => (props.theme.activeTheme === "dark" ? "#fff" : "#222")};
