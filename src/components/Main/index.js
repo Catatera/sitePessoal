@@ -68,12 +68,12 @@ export default function Main() {
           content={`Uma ferramenta para ajudar os usuários a calcularem sua taxa metabólica basal.`}
           usedTecnologies={allTecnologies.slice(0, 2)}
         />
-        <ProjectCardItem
+        {/* <ProjectCardItem
           projectName={"em andamento"}
           projectImg={projectGetKcalImg}
           content={`...`}
           usedTecnologies={[""]}
-        />
+        /> */}
       </Projects>
     </main>
   );
