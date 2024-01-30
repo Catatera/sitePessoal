@@ -7,12 +7,14 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   padding: 2.5vh 0vh 2.5vh 0vh;
   background-color: ${(props) => props.theme.headerBackgroundColor};
   box-shadow: 0px 1px 20px 1px
     ${(props) => (props.theme.activeTheme === "light" ? "#0000003b" : "none")};
 `;
 export const Title = styled.h1`
+  font-size:135%;
   margin-left: 1%;
   color: #18d0ffde;
   &:hover {
@@ -26,6 +28,7 @@ export const Nav = styled.nav`
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
+    margin-left:-5%;
   }
   li {
     display: inline;
@@ -39,6 +42,7 @@ export const Nav = styled.nav`
       color: #18d0ffde;
     }
     svg{
+      transition:0.2s;
       cursor: pointer;
     }
   }

@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Nav, Title } from "./styles"
+import { Container, Nav, Title } from "./styles";
 import { FiMoon, FiSun } from "react-icons/fi";
 
-
-export default function Header({onToggleTheme,selectedTheme}) {       console.log(selectedTheme)
+export default function Header({ onToggleTheme, selectedTheme }) {
+  console.log(selectedTheme);
 
   return (
     <Container>
@@ -21,9 +21,13 @@ export default function Header({onToggleTheme,selectedTheme}) {       console.lo
           </li>
           <li>
             {selectedTheme === "dark" ? (
-              <FiSun onClick={onToggleTheme} color="#ffffb0" />
+              <FiSun
+                onClick={onToggleTheme}
+                color="#ffffb0"
+                style={{ transition: "2.35s" }}
+              />
             ) : (
-              <FiMoon onClick={onToggleTheme} />
+              <FiMoon onClick={onToggleTheme}  />
             )}
           </li>
         </ul>
