@@ -63,7 +63,7 @@ export default function Main() {
       </AboutMe>
       <Projects id="projects">
         <ProjectCardItem
-          projectName={"CaloriesCalculator"}
+          projectName={"getKcal"}
           projectImg={projectGetKcalImg}
           content={`Uma ferramenta para ajudar os usuários a calcularem sua taxa metabólica basal.`}
           usedTecnologies={allTecnologies.slice(0, 2)}
