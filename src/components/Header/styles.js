@@ -7,11 +7,13 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  padding: 2.5vh 0vh 2.5vh 0vh;
   background-color: ${(props) => props.theme.headerBackgroundColor};
   box-shadow: 0px 1px 20px 1px
-    ${(props) => (props.theme.activeTheme === "light" ? "#0000003b" : "none")};
+    ${(props) =>
+      props.theme.activeTheme === "light"
+        ? "#0000003b"
+        : `${props.theme.headerBackgroundColor}`};
+  height: 5vh;
 `;
 export const Title = styled.h1`
   font-size:135%;

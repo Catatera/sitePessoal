@@ -6,7 +6,7 @@ export default function Header({ onToggleTheme, selectedTheme }) {
   console.log(selectedTheme);
 
   return (
-    <Container>
+    <Container style={{ fontSize: "clamp(15.5px, 1.1vw, 1.4em)" }}>
       <Title>&lt;GL/&gt;</Title>
       <Nav>
         <ul>
@@ -27,7 +27,7 @@ export default function Header({ onToggleTheme, selectedTheme }) {
                 style={{ transition: "2.35s" }}
               />
             ) : (
-              <FiMoon onClick={onToggleTheme}  />
+              <FiMoon onClick={onToggleTheme} />
             )}
           </li>
         </ul>
