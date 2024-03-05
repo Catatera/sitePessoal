@@ -63,6 +63,7 @@ export default function Main() {
       </AboutMe>
       <Projects id="projects">
         <ProjectCardItem
+          projectLink={"https://gabriel-leonel.netlify.app/"}
           projectName={"getKcal"}
           projectImg={projectGetKcalImg}
           content={`Uma ferramenta para ajudar os usuários a calcularem sua taxa metabólica basal.`}
