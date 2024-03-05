@@ -5,6 +5,7 @@ import { ProjectCard } from "./styles";
 
   return (
     <ProjectCard>
+    <a href={props.projectLink}>
       <figure>
         <img src={props.projectImg}></img>
       </figure>
@@ -15,6 +16,7 @@ import { ProjectCard } from "./styles";
           <p key={index}>{item}</p>
         ))}
       </figcaption>
+        </a>
     </ProjectCard>
   );
 }
