@@ -159,6 +159,7 @@ export const Projects = styled.section`
 `;
 
 export const ProjectCard = styled.article`
+text-decoration:none;
   margin: 5% auto;
   text-align: center;
   width: 80vh;
