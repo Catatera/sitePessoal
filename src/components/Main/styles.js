@@ -159,11 +159,20 @@ export const Projects = styled.section`
 `;
 
 export const ProjectCard = styled.article`
-text-decoration:none;
+  background-color: ${(props) => (props.theme.backgroundColor)};
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration:none;
   margin: 5% auto;
   text-align: center;
   width: 80vh;
-
+  a{
+    text-decoration:none;
+    color:${(props) => (props.theme.textColor)};
+    p{
+      text-align:center;
+    }
+  }
   img {
     width: 100%;
   }

@@ -1,17 +1,24 @@
 import React from "react";
 import Tecnologies from "./Tecnologies";
 import ProjectCardItem from "./ProjectCardItem";
-import projectGetKcalImg from "./images/projectGetKcal.jpeg";
+import projectGetKcalImg from "./images/projectImg/projectGetKcal.jpeg";
+import projectMenu from "./images/projectImg/projectMenu.jpeg";
+import projectCounter from "./images/projectImg/projectCounter.jpeg";
+import projectMyContacts from "./images/projectImg/projectMyContacts.jpeg";
+import projectColorSorter from "./images/projectImg/projectColorSorter.jpeg";
+import projectNetuno from "./images/projectImg/projectNetuno.jpeg";
 
 import { ProfileContainer, ProfileButtons, AboutMe, Projects } from "./styles";
 import profileImg from "./images/bonito.jpeg";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import { FaJs, FaHtml5, FaCss3, FaLinkedin } from "react-icons/fa";
+import { FaJs, FaHtml5, FaCss3, FaReact, FaNode, FaLinkedin } from "react-icons/fa";
 
 const allTecnologies = [
   <FaHtml5 size="30px" />,
   <FaCss3 size="30px" />,
   <FaJs size="30px" />,
+  <FaReact size="30px" />,
+  <FaNode size="30px" />,
 ];
 export default function Main() {
   return (
@@ -63,18 +70,47 @@ export default function Main() {
       </AboutMe>
       <Projects id="projects">
         <ProjectCardItem
+          projectLink={""}
+          projectName={"MyContacts - Em desenvolvimento"}
+          projectImg={projectMyContacts}
+          content={`Aplicação completa de gerenciamento de contatos`}
+          usedTecnologies={allTecnologies.slice(0, 5)}
+        />
+        <ProjectCardItem
+          projectLink={"https://catatera.github.io/netuno-landing-page/"}
+          projectName={"Fasters Netuno"}
+          projectImg={projectNetuno}
+          content={`Landing page desenvolvida para o projeto Netuno dedicado à empresa Fasters.`}
+          usedTecnologies={allTecnologies.slice(0, 2)}
+        />
+        <ProjectCardItem
           projectLink={"https://catatera.github.io/caloriesCalculator/"}
           projectName={"getKcal"}
           projectImg={projectGetKcalImg}
           content={`Uma ferramenta para ajudar os usuários a calcularem sua taxa metabólica basal.`}
-          usedTecnologies={allTecnologies.slice(0, 2)}
+          usedTecnologies={allTecnologies.slice(0, 3)}
         />
-        {/* <ProjectCardItem
-          projectName={"em andamento"}
-          projectImg={projectGetKcalImg}
-          content={`...`}
-          usedTecnologies={[""]}
-        /> */}
+        <ProjectCardItem
+          projectLink={"https://catatera.github.io/projetos/projeto08"}
+          projectName={"Cálculo de porcentagem"}
+          projectImg={projectCounter}
+          content={`Ferramenta front-end de cálculo de porcentagens.`}
+          usedTecnologies={allTecnologies.slice(0, 3)}
+        />
+        <ProjectCardItem
+          projectLink={"https://catatera.github.io/projetos/faculdade/fprojeto01/"}
+          projectName={"Livro de Receitas"}
+          projectImg={projectMenu}
+          content={`Um livro de receitas cativante e convidativo.`}
+          usedTecnologies={allTecnologies.slice(0, 3)}
+        />
+        <ProjectCardItem
+          projectLink={"https://catatera.github.io/projetos/projeto06"}
+          projectName={"Sorteador de cores"}
+          projectImg={projectColorSorter}
+          content={`Seleciona códigos hexadecimais aleatórios`}
+          usedTecnologies={allTecnologies.slice(0, 3)}
+        />
       </Projects>
     </main>
   );
